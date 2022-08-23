@@ -2,9 +2,9 @@ const fs = require('fs')
 const globby = require('globby')
 function addPage(page) {
   const path = page.replace('pages', '').replace('.js', '').replace('.mdx', '')
-  const route = path === '/index' ? '' : path
+  const route = (path === '/index') ? '' : path
   return `  <url>
-    <loc>${`${process.env.WEBSITE_URL}${route}`}</loc>
+    <loc>${`${process.env.WEBSITE_URL}${route.replace('/index', '')}`}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
