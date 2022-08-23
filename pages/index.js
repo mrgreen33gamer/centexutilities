@@ -92,7 +92,7 @@ export default function Main() {
       <Head>
         <title>Cen-Tex Utilities</title>
         <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/logoIcon.ico" />
+        <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
@@ -109,7 +109,7 @@ export default function Main() {
         Dallas Underground Utilities Contractor, Dallas Water & Sewer Utilities Contractor, Dallas Underground Firelines Utilities Contractor, Dallas Excavation Utilities Contractor, Dallas Trenching Utilities Contractor, Dallas Site Work Utilities Contractor, Dallas Road Boaring Utilities Contractor
         Hewitt Underground Utilities Contractor, Hewitt Water & Sewer Utilities Contractor, Hewitt Underground Firelines Utilities Contractor, Hewitt Excavation Utilities Contractor, Hewitt Trenching Utilities Contractor, Hewitt Site Work Utilities Contractor, Hewitt Road Boaring Utilities Contractor, 
         China Spring Underground Utilities Contractor, China Spring Water & Sewer Utilities Contractor, China Spring Underground Firelines Utilities Contractor, China Spring Excavation Utilities Contractor, China Spring Trenching Utilities Contractor, China Spring Site Work Utilities Contractor, China Spring Road Boaring Utilities Contractor" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logoIconApple.png" />
+        <link rel="apple-touch-icon" href="/logoIconApple.png" />
       </Head>
       <Header />
       <main className={styles.main}>
