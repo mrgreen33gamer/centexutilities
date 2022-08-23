@@ -1,0 +1,114 @@
+.footerWrapper > div.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0153d6;
+    color: whitesmoke;
+    height: auto;
+    width: 100%;
+    font-family: 'Rubik';
+}
+
+.footerWrapper > div.footer > div {
+    padding: 50px 20px;
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) > div {
+    font-size: 12px;
+    justify-content: center;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) > div > div {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) > div:nth-child(1) > div  > div > h1 {
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) > div > div > h1 {
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+.footerWrapper > div.footer > div:nth-child(1) > div > div > .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footerWrapper > div.footer > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footerWrapper > div.footer > div:nth-child(3) {
+    align-items: center;
+}
+
+.footerWrapper > div.footer > div:nth-child(3) > div {
+    padding: 10px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.footerWrapper > div.scottapps {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    background-color: black;
+    justify-content: center;
+}
+
+.footerWrapper > div.scottapps a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerWrapper > div.scottapps a > div:nth-child(1) {
+    padding-right: 5px;
+    font-family: 'Play', sans-serif;
+}
+.footerWrapper > div.scottapps a > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerWrapper > div.scottapps a > div:nth-child(2) > img:nth-child(1) {
+    width: 50px;
+}
+.footerWrapper > div.scottapps a > div:nth-child(2) > img:nth-child(2) {
+    width: 20px;
+    position: absolute;
+}
+
+.footerWrapper > div.scottapps a > div:nth-child(3) {
+    font-family: 'Electrolize', sans-serif;
+    color: #b1de00;
+    padding-left: 5px;
+}
+.footerWrapper > div.scottapps a > div:nth-child(3) h1 {
+    padding-top: 2px;
+}

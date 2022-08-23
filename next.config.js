@@ -5,3 +5,12 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  webpack: (config, { isServer}) => {
+      if(isServer) {
+          require("./sitemap-generator");
+      }
+      return config;
+  }
+}

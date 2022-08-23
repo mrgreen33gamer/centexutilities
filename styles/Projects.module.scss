@@ -1,0 +1,229 @@
+@import './globalVariables.scss';
+
+.projContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.projContainer > div {
+    flex: 0 1 650px;
+    height: 650px;
+    width: 50%;
+    margin: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.projContainer div > div {
+    display: flex;
+}
+
+/* Slider Section */
+.projContainer div > div:nth-child(1) {
+    flex: 0 1 450px;
+    height: 450px;
+}
+
+/* Project Info Section */
+.projContainer div > div:nth-child(2) {
+    flex: 0 1 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projContainer div > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik';
+    text-align: center;
+    background-color: black;
+}
+
+.projContainer div > div:nth-child(2) > div:nth-child(1) {
+    flex: 0 1 50%;
+    background-color: white;
+    height: 100%;
+    font-family: headerFont;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.projContainer div > div:nth-child(2) > div:nth-child(1) h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.projContainer div > div:nth-child(2) > div:nth-child(1) h2 {
+    font-family: 'Rubik';
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 200;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    letter-spacing: 5px;
+}
+
+.projContainer div > div:nth-child(2) > div:nth-child(2) {
+    flex: 0 1 50%;
+    background-color: white;
+    height: 100%;
+    padding: 5px 25px;
+    border-top: 1px solid black;
+}
+
+
+@media only screen and (orientation: portrait) and (max-width: 1300px) {
+    .projContainer {
+        background-color: white;
+    }
+    .projContainer > div {
+        flex: 0 1 700px;
+        height: 700px;
+        width: 70%;
+        background-color: white;
+    }
+    .projContainer div > div:nth-child(1) {
+        flex: 0 1 500px;
+        height: 500px;
+    }
+    .projContainer div > div:nth-child(2) {
+        flex: 0 1 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 900px) {
+    .projContainer div > div:nth-child(1) {
+        border: none;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(1) {
+        border: none;
+    }
+    .projContainer > div {
+        flex: 0 1 800px;
+        height: 800px;
+        width: 80%;
+        border-top: 3px solid black;
+        border-left: none;
+        border-right: none;
+        margin: 100px 25px;
+    }
+    .projContainer > div:first-child {
+        margin-top: 100px;
+    }
+    .projContainer > div:last-child {
+        margin-bottom: 200px;
+    }
+    .projContainer div > div:nth-child(1) {
+        flex: 0 1 500px;
+        height: 500px;
+    }
+    .projContainer div > div:nth-child(2) {
+        flex: 0 1 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(1) {
+        flex: 0 1 200px;
+        height: 200px;
+        border-top: none;
+        border-right: none;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(2) {
+        flex: 0 1 200px;
+        height: 200px;
+        border-bottom: 2px solid black;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 650px) {
+    .projContainer > div {
+        width: 100%;
+    }
+}
+
+/* Orientation View */
+
+@media only screen and (orientation: landscape) and (max-width: 1300px) {
+    .projContainer {
+        background-color: white;
+    }
+    .projContainer > div {
+        flex: 0 1 700px;
+        height: 700px;
+        width: 85%;
+        background-color: white;
+    }
+    .projContainer div > div:nth-child(1) {
+        flex: 0 1 400px;
+        height: 400px;
+    }
+    .projContainer div > div:nth-child(2) {
+        flex: 0 1 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+    .projContainer div > div:nth-child(1) {
+        border: none;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(1) {
+        border: none;
+    }
+    .projContainer > div {
+        flex: 0 1 700px;
+        height: 700px;
+        width: 90%;
+        border-top: 3px solid black;
+        border-left: none;
+        border-right: none;
+        margin: 100px 25px;
+    }
+    .projContainer > div:first-child {
+        margin-top: 100px;
+    }
+    .projContainer > div:last-child {
+        margin-bottom: 200px;
+    }
+    .projContainer div > div:nth-child(1) {
+        flex: 0 1 400px;
+        height: 400px;
+    }
+    .projContainer div > div:nth-child(2) {
+        flex: 0 1 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(1) {
+        flex: 0 1 150px;
+        height: 150px;
+        border-top: none;
+        border-right: none;
+    }
+    .projContainer div > div:nth-child(2) > div:nth-child(2) {
+        flex: 0 1 150px;
+        height: 150px;
+        border-bottom: 2px solid black;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 650px) {
+    .projContainer > div {
+        width: 100%;
+    }
+}
