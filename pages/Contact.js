@@ -10,6 +10,8 @@ import styles from '../styles/Contact.module.scss'
 
 import emailjs from '@emailjs/browser'
 
+import { motion } from "framer-motion"
+
 export default function Contact() {
 
   const [submitDiv, setSubmitDiv] = useState(false)
@@ -73,7 +75,7 @@ export default function Contact() {
               <label htmlFor="getMessage">Message <span style={{color: '#ff0037'}}>*</span></label>
               <textarea id="getMessage" name="getMessage" placeholder="Message here..." required></textarea>
 
-              <button type="submit" onClick={() => {window.location.href = "#messageSubmitted"}}>Send Message</button>
+              <motion.button whileHover={{opacity: 0.8}} type="submit" onClick={() => {window.location.href = "#messageSubmitted"}}>Send Message</motion.button>
               
             </form>
           </div>

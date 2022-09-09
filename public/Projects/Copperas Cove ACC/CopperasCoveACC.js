@@ -1,20 +1,20 @@
 export const CopperasCoveACC = [
   {
-    image: require('./1.PNG')
+    image: ('./Projects/Copperas Cove ACC/1.PNG')
   },
   {
-    image: require('./2.JPG')
+    image: ('./Projects/Copperas Cove ACC/2.JPG')
   },
   {
-    image: require('./3.JPG')
+    image: ('./Projects/Copperas Cove ACC/3.JPG')
   },
   {
-    image: require('./4.JPG')
+    image: ('./Projects/Copperas Cove ACC/4.JPG')
   },
   {
-    image: require('./5.PNG')
+    image: ('./Projects/Copperas Cove ACC/5.PNG')
   },
   {
-    image: require('./6.PNG')
+    image: ('./Projects/Copperas Cove ACC/6.PNG')
   },
 ];

@@ -3,16 +3,18 @@ import Image from 'next/image'
 
 import styles from '../../styles/Header.module.scss'
 
+import { motion } from 'framer-motion'
+
 export default function Header() {
   return (
     <div className={styles.header}>
     <div> <Image alt="" objectFit='contain' layout="fill" src="/Home/logoWidth.png" /> </div>
     <div>
       <nav>
-        <Link href="/"><a>Home</a></Link>
-        <Link href="/Services"><a>Services</a></Link>
-        <Link href="/Projects"><a>Our Projects</a></Link>
-        <Link href="/Contact"><a>Contact</a></Link>
+        <Link href="/"><motion.a whileHover={{backgroundColor: "#920200"}}>Home</motion.a></Link>
+        <Link href="/Services"><motion.a whileHover={{backgroundColor: "#920200"}}>Services</motion.a></Link>
+        <Link href="/Projects"><motion.a whileHover={{backgroundColor: "#920200"}}>Our Projects</motion.a></Link>
+        <Link href="/Contact"><motion.a whileHover={{backgroundColor: "#920200"}}>Contact</motion.a></Link>
       </nav>
     </div>
   </div>

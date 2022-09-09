@@ -1,0 +1,53 @@
+@import './globalVariables.scss';
+
+.carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.carousel {
+
+}
+
+.carousel .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .slide img {
+    max-height: 600px;  /* change this to whatever you want */
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+    background-color: rgb(59, 59, 59);
+}
+
+.carousel .control-arrow:focus,.carousel .control-arrow:hover {
+    opacity:1;
+    filter: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel .slide .legend {
+    font-family: $logoFont;
+}

@@ -1,29 +1,29 @@
 export const PoteetTXData = [
   {
-    image: require('./1.JPG')
+    image: ('./Projects/City of Poteet/1.JPG')
   },
   {
-    image: require('./2.JPG')
+    image: ('./Projects/City of Poteet/2.JPG')
   },
   {
-    image: require('./3.JPG')
+    image: ('./Projects/City of Poteet/3.JPG')
   },
   {
-    image: require('./4.JPG')
+    image: ('./Projects/City of Poteet/4.JPG')
   },
   {
-    image: require('./5.JPG')
+    image: ('./Projects/City of Poteet/5.JPG')
   },
   {
-    image: require('./6.JPG')
+    image: ('./Projects/City of Poteet/6.JPG')
   },
   {
-    image: require('./7.JPG')
+    image: ('./Projects/City of Poteet/7.JPG')
   },
   {
-    image: require('./8.JPG')
+    image: ('./Projects/City of Poteet/8.JPG')
   },
   {
-    image: require('./9.JPG')
+    image: ('./Projects/City of Poteet/9.JPG')
   },
 ];

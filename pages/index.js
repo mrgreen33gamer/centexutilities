@@ -12,9 +12,9 @@ import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-import Slider from '../components/Slider/ImageSlider'
-
+import { Carousel } from 'react-responsive-carousel';
 import { FamilySlideData } from '../public/Home/SlideData/FamilySlideData'
+
 
 function WelcomeContainer() {
   const settings = {
@@ -41,43 +41,43 @@ function BusinessHoursContainer({mon, tue, wed, thur, fri, sat, sun}) {
   return (
     <div>
       {currentWeekday === 'Monday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Monday</h4> <h4>{mon}</h4> </div>
+      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Monday</h4> <h4>{mon}</h4> </div>
         :
       <div> <h4>Monday</h4> <h4>{mon}</h4> </div>
       }
 
       {currentWeekday === 'Tuesday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Tuesday</h4> <h4>{tue}</h4> </div>
+      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Tuesday</h4> <h4>{tue}</h4> </div>
         :
       <div> <h4>Tuesday</h4> <h4>{tue}</h4> </div>
       }
 
       {currentWeekday === 'Wednesday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Wednesday</h4> <h4>{wed}</h4> </div>
+      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Wednesday</h4> <h4>{wed}</h4> </div>
         :
       <div> <h4>Wednesday</h4> <h4>{wed}</h4> </div>
       }
       
       {currentWeekday === 'Thursday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Thursday</h4> <h4>{thur}</h4> </div>
+      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Thursday</h4> <h4>{thur}</h4> </div>
         :
       <div> <h4>Thursday</h4> <h4>{thur}</h4> </div>
       }
 
       {currentWeekday === 'Friday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Friday</h4> <h4>{fri}</h4> </div>
+      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Friday</h4> <h4>{fri}</h4> </div>
         :
       <div> <h4>Friday</h4> <h4>{fri}</h4> </div>
       }
 
       {currentWeekday === 'Saturday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Saturday</h4> <h4>{sat}</h4> </div>
+      <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Saturday</h4> <h4>{sat}</h4> </div>
         :
       <div> <h4>Saturday</h4> <h4>{sat}</h4> </div>
       }
 
       {currentWeekday === 'Sunday' ? 
-      <div style={{color: 'red'}}> <h4 style={{textDecoration: 'underline'}}>Sunday</h4> <h4>{sun}</h4> </div>
+      <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Sunday</h4> <h4>{sun}</h4> </div>
         :
       <div> <h4>Sunday</h4> <h4>{sun}</h4> </div>
       }
@@ -91,7 +91,7 @@ export default function Main() {
     <section>
       <Head>
         <title>Cen-Tex Utilities</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
@@ -114,7 +114,7 @@ export default function Main() {
       <Header />
       <main className={styles.main}>
           <div className={styles.topPicture}>
-            <span style={{opacity: 0.3}}><Image objectFit='cover' layout="fill" src="/Home/backgroundCover.jpg" alt="" /></span>
+            <span style={{opacity: 0.6}}><Image objectFit='cover' layout="fill" src="/Home/backgroundCover.jpg" alt="" /></span>
             <div>
               <WelcomeContainer />
             </div>
@@ -123,7 +123,17 @@ export default function Main() {
           <div className={styles.pageContent}>
 
             <div id={styles.next}>
-              <div><Slider slides={FamilySlideData}/></div>
+              <div>
+                <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showArrows={true} showThumbs={false} showIndicators={false}  >
+                {FamilySlideData.map((slide, index) => {
+                  return (
+                    <div key={index} >
+                      <img src={slide.image} alt="" draggable={false} />
+                    </div>
+                  );
+                })}
+                </Carousel>
+              </div>
               <div>
                 <h1>Family Owned And Growing!</h1>
                 <hr />
@@ -135,6 +145,14 @@ export default function Main() {
                   His experience and knowledge is built on three generations of Harrison's in the heavy equipment, mining, and construction industries.
                 </p>
               </div>
+            </div>
+
+            <div id={styles.pictureDivider}>
+              <div><Image src="/Projects/City of McGregor/1.JPG" layout='fill' objectFit='cover' /></div>
+              <div><Image src="/Projects/City of Poteet/1.JPG" layout='fill' objectFit='cover' /></div>
+              <div><Image src="/Projects/Copperas Cove ACC/3.JPG" layout='fill' objectFit='cover' /></div>
+              <div><Image src="/Projects/CSL Plasma Austin/1.PNG" layout='fill' objectFit='cover' /></div>
+              <div><Image src="/Projects/CSL Plasma Round Rock/1.JPG" layout='fill' objectFit='cover' /></div>
             </div>
 
             <div id={styles.businessHours}>

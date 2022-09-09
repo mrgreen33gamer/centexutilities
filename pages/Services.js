@@ -5,8 +5,7 @@ import Footer from '../components/Footer/Footer'
 
 import styles from '../styles/Services.module.scss'
 
-import Slider from '../components/Slider/ImageSlider'
-
+import { Carousel } from 'react-responsive-carousel'
 import { LocServicingSLD } from '../components/Slider/LocServicingSLD'
 
 import { motion } from 'framer-motion'
@@ -46,7 +45,7 @@ export default function Services() {
           <p>
             Click below to see a few of our completed projects.   
           </p>
-          <motion.a whileHover={{ opacity: 0.7 }} whileTap={{ scale: 0.95 }} href="/projects">Project Portfolio <FontAwesomeIcon icon={faChevronRight} /> </motion.a>
+          <motion.a whileHover={{ opacity: 0.8 }} whileTap={{ scale: 0.95 }} href="/projects">Project Portfolio <FontAwesomeIcon icon={faChevronRight} /> </motion.a>
         </div>
 
         <div>
@@ -74,7 +73,16 @@ export default function Services() {
         <div>
           <div><h1>Servicing These Areas</h1></div>
           <div>
-            <Slider slides={LocServicingSLD} data={LocServicingSLD}/>
+            <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showArrows={true} showThumbs={false} showIndicators={false}  >
+              {LocServicingSLD.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img src={slide.image} alt="" draggable={false} />
+                    <p className="legend">{slide.title}</p>
+                  </div>
+                );
+              })}
+            </Carousel>
           </div>
           
         </div>

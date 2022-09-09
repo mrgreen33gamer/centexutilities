@@ -7,6 +7,8 @@ import styles from '../styles/Projects.module.scss'
 
 import Slider from '../components/Slider/ImageSlider'
 
+import { Carousel } from 'react-responsive-carousel'
+
 import { PoteetTXData } from '/public/Projects/City of Poteet/PoteetTXData'
 import { Data_CSL_Plasma_Austin } from '/public/Projects/CSL Plasma Austin/Data_CSL_Plasma_Austin'
 import { Data_CSL_Plasma_RR } from '/public/Projects/CSL Plasma Round Rock/Data_CSL_Plasma_RR'
@@ -44,7 +46,15 @@ export default function Projects() {
       <div className={styles.projContainer}>
 
         <div>
-          <div><Slider slides={Data_CSL_Plasma_Austin}/></div>
+          <Carousel  emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+            {Data_CSL_Plasma_Austin.map((slide, index) => {
+              return (
+                <div key={index} >
+                  <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                </div>
+              );
+            })}
+          </Carousel>
           <div>
             <div>
               <h1>CSL Plasma</h1>
@@ -56,7 +66,17 @@ export default function Projects() {
         </div>
 
         <div>
-          <div><Slider slides={Data_CSL_Plasma_RR}/></div>
+          <div>
+            <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+              {Data_CSL_Plasma_RR.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1>CSL Plasma</h1>
@@ -68,7 +88,17 @@ export default function Projects() {
         </div>
 
         <div>
-          <div><Slider slides={PoteetTXData}/></div>
+          <div>
+          <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+              {PoteetTXData.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1 style={{fontSize: '1.5rem', fontWeight: 'lighter', paddingBottom: '10px'}}>Poteet Water Systems</h1>
@@ -79,7 +109,17 @@ export default function Projects() {
         </div>
 
         <div>
-          <div><Slider slides={IKOManuPlant}/></div>
+          <div>
+          <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+              {IKOManuPlant.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1 style={{fontSize: '1.4rem', fontWeight: 'lighter', paddingBottom: '10px'}}>IKO Manufacturing Plant</h1>
@@ -91,7 +131,17 @@ export default function Projects() {
         </div>
 
         <div>
-          <div><Slider slides={CopperasCoveACC}/></div>
+          <div>
+          <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+              {CopperasCoveACC.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1 style={{fontSize: '1.1rem', fontWeight: 'lighter', paddingBottom: '10px'}}>City of Copperas Cove, Animal Control Center</h1>
@@ -103,7 +153,17 @@ export default function Projects() {
         </div>
 
         <div>
-          <div><Slider slides={McGregorTXData}/></div>
+          <div>
+          <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showArrows={true} showThumbs={false} showIndicators={false}  >
+              {McGregorTXData.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1 style={{fontSize: '1.1rem', fontWeight: 'lighter', paddingBottom: '10px'}}>Sanitary Sewer Manhole Rehab</h1>

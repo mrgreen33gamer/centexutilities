@@ -1,170 +1,170 @@
 export const Data_CSL_Plasma_Austin = [
   {
-    image: require('./1.PNG')
+    image: ('./Projects/CSL Plasma Austin/1.PNG')
   },
   {
-    image: require('./2.JPG')
+    image: ('./Projects/CSL Plasma Austin/2.JPG')
   },
   {
-    image: require('./3.JPG')
+    image: ('./Projects/CSL Plasma Austin/3.JPG')
   },
   {
-    image: require('./4.JPG')
+    image: ('./Projects/CSL Plasma Austin/4.JPG')
   },
   {
-    image: require('./5.JPG')
+    image: ('./Projects/CSL Plasma Austin/5.JPG')
   },
   {
-    image: require('./6.JPG')
+    image: ('./Projects/CSL Plasma Austin/6.JPG')
   },
   {
-    image: require('./7.JPG')
+    image: ('./Projects/CSL Plasma Austin/7.JPG')
   },
   {
-    image: require('./8.JPG')
+    image: ('./Projects/CSL Plasma Austin/8.JPG')
   },
   {
-    image: require('./9.JPG')
+    image: ('./Projects/CSL Plasma Austin/9.JPG')
   },
   {
-    image: require('./10.JPG')
+    image: ('./Projects/CSL Plasma Austin/10.JPG')
   },
   {
-    image: require('./11.JPG')
+    image: ('./Projects/CSL Plasma Austin/11.JPG')
   },
   {
-    image: require('./12.JPG')
+    image: ('./Projects/CSL Plasma Austin/12.JPG')
   },
   {
-    image: require('./13.JPG')
+    image: ('./Projects/CSL Plasma Austin/13.JPG')
   },
   {
-    image: require('./14.JPG')
+    image: ('./Projects/CSL Plasma Austin/14.JPG')
   },
   {
-    image: require('./15.JPG')
+    image: ('./Projects/CSL Plasma Austin/15.JPG')
   },
   {
-    image: require('./16.JPG')
+    image: ('./Projects/CSL Plasma Austin/16.JPG')
   },
   {
-    image: require('./17.JPG')
+    image: ('./Projects/CSL Plasma Austin/17.JPG')
   },
   {
-    image: require('./18.JPG')
+    image: ('./Projects/CSL Plasma Austin/18.JPG')
   },
   {
-    image: require('./19.JPG')
+    image: ('./Projects/CSL Plasma Austin/19.JPG')
   },
   {
-    image: require('./20.JPG')
+    image: ('./Projects/CSL Plasma Austin/20.JPG')
   },
   {
-    image: require('./21.JPG')
+    image: ('./Projects/CSL Plasma Austin/21.JPG')
   },
   {
-    image: require('./22.JPG')
+    image: ('./Projects/CSL Plasma Austin/22.JPG')
   },
   {
-    image: require('./23.JPG')
+    image: ('./Projects/CSL Plasma Austin/23.JPG')
   },
   {
-    image: require('./24.JPG')
+    image: ('./Projects/CSL Plasma Austin/24.JPG')
   },
   {
-    image: require('./25.JPG')
+    image: ('./Projects/CSL Plasma Austin/25.JPG')
   },
   {
-    image: require('./26.JPG')
+    image: ('./Projects/CSL Plasma Austin/26.JPG')
   },
   {
-    image: require('./27.JPG')
+    image: ('./Projects/CSL Plasma Austin/27.JPG')
   },
   {
-    image: require('./28.JPG')
+    image: ('./Projects/CSL Plasma Austin/28.JPG')
   },
   {
-    image: require('./29.JPG')
+    image: ('./Projects/CSL Plasma Austin/29.JPG')
   },
   {
-    image: require('./30.JPG')
+    image: ('./Projects/CSL Plasma Austin/30.JPG')
   },
   {
-    image: require('./31.JPG')
+    image: ('./Projects/CSL Plasma Austin/31.JPG')
   },
   {
-    image: require('./32.JPG')
+    image: ('./Projects/CSL Plasma Austin/32.JPG')
   },
   {
-    image: require('./33.JPG')
+    image: ('./Projects/CSL Plasma Austin/33.JPG')
   },
   {
-    image: require('./34.JPG')
+    image: ('./Projects/CSL Plasma Austin/34.JPG')
   },
   {
-    image: require('./35.JPG')
+    image: ('./Projects/CSL Plasma Austin/35.JPG')
   },
   {
-    image: require('./36.JPG')
+    image: ('./Projects/CSL Plasma Austin/36.JPG')
   },
   {
-    image: require('./37.JPG')
+    image: ('./Projects/CSL Plasma Austin/37.JPG')
   },
   {
-    image: require('./38.JPG')
+    image: ('./Projects/CSL Plasma Austin/38.JPG')
   },
   {
-    image: require('./39.JPG')
+    image: ('./Projects/CSL Plasma Austin/39.JPG')
   },
   {
-    image: require('./40.JPG')
+    image: ('./Projects/CSL Plasma Austin/40.JPG')
   },
   {
-    image: require('./41.JPG')
+    image: ('./Projects/CSL Plasma Austin/41.JPG')
   },
   {
-    image: require('./42.JPG')
+    image: ('./Projects/CSL Plasma Austin/42.JPG')
   },
   {
-    image: require('./43.JPG')
+    image: ('./Projects/CSL Plasma Austin/43.JPG')
   },
   {
-    image: require('./44.JPG')
+    image: ('./Projects/CSL Plasma Austin/44.JPG')
   },
   {
-    image: require('./45.JPG')
+    image: ('./Projects/CSL Plasma Austin/45.JPG')
   },
   {
-    image: require('./46.JPG')
+    image: ('./Projects/CSL Plasma Austin/46.JPG')
   },
   {
-    image: require('./47.JPG')
+    image: ('./Projects/CSL Plasma Austin/47.JPG')
   },
   {
-    image: require('./48.JPG')
+    image: ('./Projects/CSL Plasma Austin/48.JPG')
   },
   {
-    image: require('./49.JPG')
+    image: ('./Projects/CSL Plasma Austin/49.JPG')
   },
   {
-    image: require('./50.JPG')
+    image: ('./Projects/CSL Plasma Austin/50.JPG')
   },
   {
-    image: require('./51.JPG')
+    image: ('./Projects/CSL Plasma Austin/51.JPG')
   },
   {
-    image: require('./52.JPG')
+    image: ('./Projects/CSL Plasma Austin/52.JPG')
   },
   {
-    image: require('./53.JPG')
+    image: ('./Projects/CSL Plasma Austin/53.JPG')
   },
   {
-    image: require('./54.JPG')
+    image: ('./Projects/CSL Plasma Austin/54.JPG')
   },
   {
-    image: require('./55.JPG')
+    image: ('./Projects/CSL Plasma Austin/55.JPG')
   },
   {
-    image: require('./56.JPG')
+    image: ('./Projects/CSL Plasma Austin/56.JPG')
   },
 ];

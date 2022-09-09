@@ -1,10 +1,12 @@
+@import './globalVariables.scss';
+
 .footerWrapper > div.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #0153d6;
-    color: whitesmoke;
+    background-color: $color-1-medium;
+    color: white;
     height: auto;
     width: 100%;
     font-family: 'Rubik';

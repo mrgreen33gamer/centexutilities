@@ -1,62 +1,62 @@
 export const Data_CSL_Plasma_RR = [
   {
-    image: require('./1.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/1.JPG')
   },
   {
-    image: require('./2.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/2.JPG')
   },
   {
-    image: require('./3.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/3.JPG')
   },
   {
-    image: require('./4.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/4.JPG')
   },
   {
-    image: require('./5.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/5.JPG')
   },
   {
-    image: require('./6.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/6.JPG')
   },
   {
-    image: require('./7.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/7.JPG')
   },
   {
-    image: require('./8.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/8.JPG')
   },
   {
-    image: require('./9.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/9.JPG')
   },
   {
-    image: require('./10.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/10.JPG')
   },
   {
-    image: require('./12.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/12.JPG')
   },
   {
-    image: require('./13.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/13.JPG')
   },
   {
-    image: require('./14.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/14.JPG')
   },
   {
-    image: require('./15.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/15.JPG')
   },
   {
-    image: require('./16.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/16.JPG')
   },
   {
-    image: require('./17.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/17.JPG')
   },
   {
-    image: require('./18.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/18.JPG')
   },
   {
-    image: require('./19.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/19.JPG')
   },
   {
-    image: require('./20.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/20.JPG')
   },
   {
-    image: require('./21.JPG')
+    image: ('./Projects/CSL Plasma Round Rock/21.JPG')
   },
 ];
