@@ -138,7 +138,7 @@ export default function Main() {
                 <h1>Family Owned And Growing!</h1>
                 <hr />
                 <p>We're currently a small, family operated utility and construction company, based in China Spring, TX, and founded in 2002.
-                  We're centrally located in Texas, serving Central Texas and the surrounding areas!
+                  Cen-Tex Utilities is centrally located in Texas, performing jobs in major cities like Waco, Killen, Temple, Belton, Austin, Dallas, and Ft. Worth!
                 </p>
                 <p>Owner, Billy Harrison, has 35 years of hard-earned experience in all phases of water, sanitary sewer, and storm sewer construction,
                   as well as installed hundreds of miles of water, sewer, and storm sewer lines all over the State of Texas, serving private rural Water Corporations to public municipalities and private commercial construction.
