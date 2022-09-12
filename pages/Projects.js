@@ -46,15 +46,17 @@ export default function Projects() {
       <div className={styles.projContainer}>
 
         <div>
-          <Carousel  emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
-            {Data_CSL_Plasma_Austin.map((slide, index) => {
-              return (
-                <div key={index} >
-                  <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
-                </div>
-              );
-            })}
-          </Carousel>
+          <div>
+            <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showThumbs={false} showIndicators={false}  >
+              {Data_CSL_Plasma_Austin.map((slide, index) => {
+                return (
+                  <div key={index} >
+                    <img src={slide.image} alt="" draggable={false} />
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
           <div>
             <div>
               <h1>CSL Plasma</h1>
@@ -71,7 +73,7 @@ export default function Projects() {
               {Data_CSL_Plasma_RR.map((slide, index) => {
                 return (
                   <div key={index} >
-                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                    <img src={slide.image} alt="" draggable={false} />
                   </div>
                 );
               })}
@@ -93,7 +95,7 @@ export default function Projects() {
               {PoteetTXData.map((slide, index) => {
                 return (
                   <div key={index} >
-                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                    <img src={slide.image} alt="" draggable={false} />
                   </div>
                 );
               })}
@@ -114,7 +116,7 @@ export default function Projects() {
               {IKOManuPlant.map((slide, index) => {
                 return (
                   <div key={index} >
-                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                    <img src={slide.image} alt="" draggable={false} />
                   </div>
                 );
               })}
@@ -136,7 +138,7 @@ export default function Projects() {
               {CopperasCoveACC.map((slide, index) => {
                 return (
                   <div key={index} >
-                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                    <img src={slide.image} alt="" draggable={false} />
                   </div>
                 );
               })}
@@ -158,7 +160,7 @@ export default function Projects() {
               {McGregorTXData.map((slide, index) => {
                 return (
                   <div key={index} >
-                    <img style={{maxHeight: '400px'}} src={slide.image} alt="" draggable={false} />
+                    <img src={slide.image} alt="" draggable={false} />
                   </div>
                 );
               })}
