@@ -32,12 +32,13 @@
     padding: 12px 34px;
     border-radius: 25px;
     font-size: 28px;
+    margin: 15px;
 }
 
 .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p {
     font-family: $textFont;
     font-weight: 200;
-    margin: 25px 0px;
+    margin: 40px;
     font-size: 18px;
     text-align: center;
     width: 90%;
@@ -65,7 +66,6 @@
     margin: 15px 0px;
     list-style: none;
     display: flex;
-    flex: 0 1 500px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -73,7 +73,7 @@
 
 .infoServices > div:nth-of-type(1) > div:nth-of-type(2) > ul > li {
     font-family: $textFont;
-    margin: 5px;
+    margin: 10px;
     background-color: $color-1-light;
     color: $color-1-dark;
     text-align: center;
