@@ -2,162 +2,130 @@
 
 .infoServices {
     width: 100%;
-    height: auto;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    padding: 75px 0px;
 }
 
-.infoServices > div {
-    font-family: headerFont;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 50px 0px;
-    color: black;
-}
-
-.infoServices p, .infoServices ul {
-    font-family: 'Rubik';
-}
-
-.infoServices > div:nth-child(1) {
-    flex: 0 1 50%;
-    height: 400px;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    padding: 0px 20px;
-    font-weight: 200;
-    box-shadow: 0px 0px 5px 3px $color-1-light;
-    margin: 25px;
-}
-
-.infoServices > div:nth-child(1) h1 {
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-.infoServices > div:nth-child(1) p {
-    font-size: 18px;
-}
-
-.infoServices > div:nth-child(1) a {
-    background-color: $color-1-medium;
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-}
-
-.infoServices > div:nth-child(2) {
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 0 1 550px;
-    height: 600px;
-    padding: 0px 50px;
-    box-shadow: 0px 0px 5px 3px $color-1-light;
-    margin: 25px;
-}
-
-.infoServices > div:nth-child(2) h1 {
-    font-size: 30px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-align: center;
-}
-
-.infoServices > div:nth-child(2) ul {
-    line-height: 25px;
-    font-weight: 200;
-}
-
-.infoServices > div:nth-child(3) {
+.infoServices > div:nth-of-type(1) {
     flex: 0 1 1000px;
     display: flex;
-    flex-direction: column;
+    margin: 25px 0px;
+    border: 10px double $color-1-medium;
+    flex-wrap: wrap;
 }
 
-.infoServices div:nth-child(3) > div:nth-child(1) {
+.infoServices > div:nth-of-type(1) > div:nth-of-type(1) {
+    flex: 0 1 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 1 100px;
+    flex-direction: column;
+    padding-top: 25px;
 }
 
-.infoServices div:nth-child(3) > div:nth-child(2) {
-    flex: 0 1 auto;
+.infoServices > div:nth-of-type(1) > div:nth-of-type(1) > h1 {
+    font-family: $logoFont;
+    font-weight: 200;
+    color: white;
+    background-color: $color-1-medium;
+    padding: 12px 34px;
+    border-radius: 25px;
+    font-size: 28px;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p {
+    font-family: $textFont;
+    font-weight: 200;
+    margin: 25px 0px;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(1) > a {
+    background-color: $color-1-medium;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(2) {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid $color-1-medium;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(2) > ul {
+    margin: 15px 0px;
+    list-style: none;
+    display: flex;
+    flex: 0 1 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(2) > ul > li {
+    font-family: $textFont;
+    margin: 5px;
+    background-color: $color-1-light;
+    color: $color-1-dark;
+    text-align: center;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(2) > ul > li > b {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.infoServices > div:nth-of-type(1) > div:nth-of-type(3) {
+    flex: 0 1 100%;
     height: auto;
-    box-shadow: 0px 0px 5px 3px black;
-    background-color: lightgrey;
+    background-color: $color-1-light;
 }
 
-@media only screen and (max-width: 1300px) {
-    .infoServices > div:nth-child(3) {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .infoServices > div:nth-child(1) {
-        border-right: none;
-    }
-    .infoServices > div:nth-child(1) {
-        height: 500px;
-        flex: 0 1 70%;
-    }
-    .infoServices > div:nth-child(2) {
-        height: 645px;
-        flex: 0 1 70%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .infoServices > div:nth-child(1) {
-        height: 500px;
-        flex: 0 1 100%;
-    }
-    .infoServices > div:nth-child(1) h1 {
-        font-size: 22px;
-    }
-    .infoServices > div:nth-child(1) p {
-        font-size: 16px;
-    }
-    .infoServices > div:nth-child(1) a {
-        color: white;
-        text-decoration: none;
-        padding: 16px 24px;
-        font-size: 15px;
-    }
-
-    .infoServices > div:nth-child(2) {
-        height: 850px;
-        flex: 0 1 100%;
-    }
-    .infoServices > div {
-        flex: 0 1 100%;
-        margin: 50px 0px;
-        border: 2px solid black;
-        border-left: none;
-        border-right: none;
-    }
-    .infoServices > div:nth-child(2) h1 {
-        font-size: 24px;
-    }
-    .infoServices > div:nth-child(2) ul {
-        line-height: 28px;
-        padding: 0px 10px;
-    }
-    .infoServices > div:nth-child(3) h1 {
+@media only screen and (max-width: 1000px) {
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > h1 {
         font-size: 20px;
     }
-    .infoServices > div:nth-child(3) {
-        height: auto;
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p {
+        font-family: $textFont;
+        font-weight: 200;
+        margin: 25px 0px;
+        font-size: 17px;
+        text-align: center;
+        width: 90%;
     }
-    .infoServices {
-        background-color: white;
+    .infoServices > div:nth-of-type(1) {
+        padding-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > h1 {
+        font-size: 18px;
+        font-weight: 200;
+        padding: 8px 30px;
+    }
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p {
+        font-size: 15px;
+    }
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(2) {
+        padding: 0px 10px;
+    }
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(2) > ul > li {
+        font-weight: 200;
+        width: 100%;
+        font-size: 14px;
     }
 }
