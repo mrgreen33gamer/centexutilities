@@ -90,13 +90,13 @@ export default function Main() {
   return (
     <section>
       <Head>
-        <title>Cen-Tex Utilities - Utility & Construction Contractor // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
+        <title>Cen-Tex Utilities - Utility & Construction Company // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="description" content="Cen-Tex Utilities is a utility and construction contractor that offers site work, 
+        <meta name="description" content="Cen-Tex Utilities is a utility and construction contracting company that offers site work, 
         excavation/mass Earth, custom trenching, underground utilities (water, sewer & storm drains), road boring, licensed fireline installation, 
         watermain hottaps, and concrete (engineered foudnation, parking, sidewalks, etc...), we service cities and towns like Waco, Temple, Killeen, Belton, Ft. Worth, Dallas, Hewitt, China Spring, San Antionio, and Houston!" />
         <meta name="author" content="Scott Applications" />
