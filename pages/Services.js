@@ -11,7 +11,7 @@ import { LocServicingSLD } from '../components/Slider/LocServicingSLD'
 import { motion } from 'framer-motion'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight, faPeopleArrows, faHelmetSafety } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faPersonDigging } from '@fortawesome/free-solid-svg-icons'
 
 export default function Services() {
   return (
@@ -41,7 +41,7 @@ export default function Services() {
       <div className={styles.infoServices}>
         <div>
           <div>
-            <h1>Cen-Tex Services <FontAwesomeIcon icon={faHelmetSafety} /></h1>
+            <h1>Cen-Tex Services <FontAwesomeIcon icon={faPersonDigging} /></h1>
             <p>We offers a wide range of utility and construction contracting services to the vast majority of Central Texas!
               We have serviced small to large sized towns and cities like <b>Waco</b>, <b>Temple</b>, <b>Killeen</b>, <b>Belton</b>, <b>Ft. Worth</b>, <b>Dallas</b>, <b>Hewitt</b>, <b>China Spring</b>, and many more!
               Below is a general list of services we offer here at Cen-Tex Utilities.
