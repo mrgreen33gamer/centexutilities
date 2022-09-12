@@ -2,74 +2,100 @@
 
 .header {
 	width: 100%;
-	height: 138px;
+	height: auto;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
-	background-color: white;
-	flex-wrap: wrap;
-	overflow: hidden;
+	padding: 15px 0px;
 }
 
-.header > div:nth-child(1) {
-	flex: 0 1 350px;
-	height: inherit;
+.header > div:nth-of-type(1) {
+	flex: 0 1 300px;
+	height: 100px;
 	position: relative;
+	margin: 0px 20px;
 }
 
-.header > div:nth-child(2) nav {
-	padding: 0;
-	margin: 0;
+.header > div:nth-of-type(2) {
+	display: flex;
+	margin: 0px 20px;
 }
 
-.header > div:nth-child(2) nav > a {
-	background-color: $color-2-medium;
-	text-decoration: none;
-	color: white;
-	padding: 14px 25px;
-	margin: 0px 15px;
-	font-family: headerFont;
-    letter-spacing: 2px;
-	font-size: 13px;
+.header > div:nth-of-type(2) > a {
+	font-family: $logoFont;
+	font-size: 16px;
 	font-weight: 200;
-	border: 2px solid $color-2-dark;
-	border-radius: 9px;
-	cursor: pointer;
+	margin: 0px 8px;
+	padding: 8px 18px;
+	background-color: $color-2-dark;
+	color: white;
+	border: 2px solid $color-2-medium;
+	border-radius: 5px;
 }
 
-@media only screen and (max-width: 1300px) {
+.header > div:nth-of-type(3) {
+	flex: 0 1 auto;
+	display: none;
+}
+
+.header > div:nth-of-type(3) > div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 225px;
+	background-color: $color-2-dark;
+	border-right: 5px solid black;
+	z-index: 999;
+}
+
+.header > div:nth-of-type(3) > div > nav {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px
+}
+
+.header > div:nth-of-type(3) > div > nav > a {
+	font-family: $logoFont;
+	font-size: 16px;
+	font-weight: 200;
+	margin: 16px 0px;
+	padding: 8px 20px;
+	background-color: white;
+	color: $color-2-dark;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.header > div:nth-of-type(2) > a {
+		font-size: 14px;
+		margin: 0px 6px;
+		padding: 7px 16px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
 	.header {
-		height: 200px;
-        background-color: white;
+		flex-wrap: wrap;
 	}
-	.header > div:nth-child(1) {
-		height: 100px;
-	}
-    .header > div:nth-child(2) nav > a {
-        margin: 0px 5px;
-        padding: 10px 16px;
-		font-size: 10px;
-    }
-	.active {
-		margin: 0px 5px;
-		padding: 10px 16px;
-		font-size: 10px;
+	.header > div:nth-of-type(2) > a {
+		font-size: 14px;
+		margin: 0px 6px;
+		padding: 7px 16px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-    .header > div:nth-child(2) nav > a {
-		margin: 0px 4px;
-		padding: 10px 8px;
-		font-size: 10px;
-    }
-	.active {
-		margin: 0px 4px;
-		padding: 10px 8px;
-		font-size: 10px;
+	.header > div:nth-of-type(1) {
+		margin: none;
 	}
-	.header > div:nth-child(2) nav {
-		padding-bottom: 20px;
+	.header > div:nth-of-type(2) {
+		display: none;
+	}
+	.header > div:nth-of-type(3) {
+		display: flex;
 	}
 }
