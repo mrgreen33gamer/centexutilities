@@ -90,13 +90,13 @@ export default function Main() {
   return (
     <section>
       <Head>
-        <title>Cen-Tex Utilities</title>
+        <title>Cen-Tex Utilities - Utility & Construction Contractor // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="description" content="Cen-Tex is a utility and construction contractor that offers site work, 
+        <meta name="description" content="Cen-Tex Utilities is a utility and construction contractor that offers site work, 
         excavation/mass Earth, custom trenching, underground utilities (water, sewer & storm drains), road boring, licensed fireline installation, 
         watermain hottaps, and concrete (engineered foudnation, parking, sidewalks, etc...), we service cities and towns like Waco, Temple, Killeen, Belton, Ft. Worth, Dallas, Hewitt, China Spring, San Antionio, and Houston!" />
         <meta name="author" content="Scott Applications" />
@@ -137,7 +137,7 @@ export default function Main() {
               <div>
                 <h1>Family Owned And Growing!</h1>
                 <hr />
-                <p>Cen-Tex Utilities is a small, family operated utility and construction contracting company, based in China Spring, TX, and founded in 2002.
+                <p>We're currently a small, family operated utility and construction company, based in China Spring, TX, and founded in 2002.
                   We're centrally located in Texas, serving Central Texas and the surrounding areas!
                 </p>
                 <p>Owner, Billy Harrison, has 35 years of hard-earned experience in all phases of water, sanitary sewer, and storm sewer construction,
@@ -148,11 +148,11 @@ export default function Main() {
             </div>
 
             <div id={styles.pictureDivider}>
-              <div><Image src="/Projects/City of McGregor/1.JPG" layout='fill' objectFit='cover' /></div>
-              <div><Image src="/Projects/City of Poteet/1.JPG" layout='fill' objectFit='cover' /></div>
-              <div><Image src="/Projects/Copperas Cove ACC/3.JPG" layout='fill' objectFit='cover' /></div>
-              <div><Image src="/Projects/CSL Plasma Austin/1.PNG" layout='fill' objectFit='cover' /></div>
-              <div><Image src="/Projects/CSL Plasma Round Rock/1.JPG" layout='fill' objectFit='cover' /></div>
+              <div><Image src="/Projects/City of McGregor/1.JPG" layout='fill' objectFit='cover' alt="City of McGregor Construction and Utility Site" /></div>
+              <div><Image src="/Projects/City of Poteet/1.JPG" layout='fill' objectFit='cover' alt="City of Poteet Construction and Utility Site" /></div>
+              <div><Image src="/Projects/Copperas Cove ACC/3.JPG" layout='fill' objectFit='cover' alt="Copperas Cove ACC Construction and Utility Site" /></div>
+              <div><Image src="/Projects/CSL Plasma Austin/1.PNG" layout='fill' objectFit='cover' alt="CSL Plasma Austin Construction and Utility Site" /></div>
+              <div><Image src="/Projects/CSL Plasma Round Rock/1.JPG" layout='fill' objectFit='cover' alt="CSL Plasma Round Rock Construction and Utility Site" /></div>
             </div>
 
             <div id={styles.businessHours}>
