@@ -44,6 +44,10 @@
     width: 90%;
 }
 
+.infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p > b {
+    font-weight: 400;
+}
+
 .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > a {
     background-color: $color-1-medium;
     color: white;
@@ -127,5 +131,8 @@
         font-weight: 200;
         width: 100%;
         font-size: 14px;
+    }
+    .infoServices > div:nth-of-type(1) > div:nth-of-type(1) > p > b {
+        font-weight: 300;
     }
 }
