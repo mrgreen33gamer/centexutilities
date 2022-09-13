@@ -10,7 +10,11 @@ import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 
+import { useRouter } from 'next/router'
+
 export default function Header() {
+
+  const router = useRouter()
 
   const [menuState, setMenuState] = useState(false)
 
@@ -70,10 +74,10 @@ export default function Header() {
           <Image layout='fill' objectFit='contain' draggable={false} alt="Cen-Tex Utilities Logo" src="/Home/logoWidth.png" />
         </div>
         <div>
-          <Link href="/"><motion.a whileHover={{ color: '#fff' }}>Home</motion.a></Link>
-          <Link href="/Services"><motion.a whileHover={{ color: '#fff' }}>Services</motion.a></Link>
-          <Link href="/Projects"><motion.a whileHover={{ color: '#fff' }}>Projects</motion.a></Link>
-          <Link href="/Contact"><motion.a whileHover={{ color: '#fff' }}>Contact</motion.a></Link>
+          <Link href="/"><motion.a className={styles[router.pathname == "/" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Home</motion.a></Link>
+          <Link href="/Services"><motion.a className={styles[router.pathname == "/Services" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Services</motion.a></Link>
+          <Link href="/Projects"><motion.a className={styles[router.pathname == "/Projects" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Projects</motion.a></Link>
+          <Link href="/Contact"><motion.a className={styles[router.pathname == "/Contact" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Contact</motion.a></Link>
         </div>
         <div ref={hamburgerMenuSection}>
           {
@@ -81,10 +85,10 @@ export default function Header() {
           }
             <motion.div ref={mobileNavigation} variants={menuAnimation} initial='hidden' animate={menuState === true ? 'visible' : 'back'}>
               <nav>
-                <Link href="/"><motion.a whileHover={{ color: '#fff' }}>Home</motion.a></Link>
-                <Link href="/Services"><motion.a whileHover={{ color: '#fff' }}>Services</motion.a></Link>
-                <Link href="/Projects"><motion.a whileHover={{ color: '#fff' }}>Projects</motion.a></Link>
-                <Link href="/Contact"><motion.a whileHover={{ color: '#fff' }}>Contact</motion.a></Link>
+                <Link href="/"><motion.a className={styles[router.pathname == "/" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Home</motion.a></Link>
+                <Link href="/Services"><motion.a className={styles[router.pathname == "/Services" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Services</motion.a></Link>
+                <Link href="/Projects"><motion.a className={styles[router.pathname == "/Projects" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Projects</motion.a></Link>
+                <Link href="/Contact"><motion.a className={styles[router.pathname == "/Contact" ? "active" : ""]} whileHover={{ boxShadow: '0px 0px 3px 5px #ff9b99' }}>Contact</motion.a></Link>
               </nav>
             </motion.div>
         </div>

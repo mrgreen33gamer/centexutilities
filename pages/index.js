@@ -15,6 +15,8 @@ import { faPhone, faClock, faFile } from '@fortawesome/free-solid-svg-icons'
 import { Carousel } from 'react-responsive-carousel';
 import { FamilySlideData } from '../public/Home/SlideData/FamilySlideData'
 
+import { useRouter } from 'next/router'
+
 
 function WelcomeContainer() {
   const settings = {
@@ -86,7 +88,7 @@ function BusinessHoursContainer({mon, tue, wed, thur, fri, sat, sun}) {
 }
 
 export default function Main() {
-
+  const router = useRouter();
   return (
     <section>
       <Head>
@@ -96,19 +98,10 @@ export default function Main() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="description" content="Cen-Tex Utilities is a utility and construction contracting company that offers site work, 
-        excavation/mass Earth, custom trenching, underground utilities (water, sewer & storm drains), road boring, licensed fireline installation, 
-        watermain hottaps, and concrete (engineered foudnation, parking, sidewalks, etc...), we service cities and towns like Waco, Temple, Killeen, Belton, Ft. Worth, Dallas, Hewitt, China Spring, San Antionio, and Houston!" />
+        <meta name="description" content="Cen-Tex Utilities is a utility construction based in Waco, TX. Cen-Tex Utilities is known for providing site work, excavation,
+        infrastructure/subdivisions, underground utilities (water, sewer, and storm drains), water/sewer line repair, underground firelines, utility locating, road boring, custom trenching, 
+        concrete, asphalt, demolition, landscaping, erosion control, soil stabilization, TCEQ spec retention ponds, trench safety and shoring, and certified confined spaces." />
         <meta name="author" content="Scott Applications" />
-        <meta name="keywords" content="Texas Utilities Contractor, Utilities Contractor, Waco Utilities Contractor, Killeen Utilities Contractor, Temple Utilities Contractor, Belton Utilities Contractor, Austin Utilities Contractor, Dallas Utilities Contractor, Ft. Worth Utilities Contractor, Hewitt Utilities Contractor, Woodway Utlities, Bellmead Utiltiies, China Spring Utilities Contractor, Robinson Utilities Contractor, Lorena Utilities Contractor, Valley Mills Utilities Contractor, Rock Springs Utilities Contractor, 
-        Waco Underground Utilities Contractor, Waco Water & Sewer Utilities Contractor, Waco Underground Firelines Utilities Contractor, Waco Excavation Utilities Contractor, Waco Trenching Utilities Contractor, Waco Site Work Utilities Contractor, Waco Road Boaring Utilities Contractor, 
-        Temple Underground Utilities Contractor, Temple Water & Sewer Utilities Contractor, Temple Underground Firelines Utilities Contractor, Temple Excavation Utilities Contractor, Temple Trenching Utilities Contractor, Temple Site Work Utilities Contractor, Temple Road Boaring Utilities Contractor
-        Killeen Underground Utilities Contractor, Killeen Water & Sewer Utilities Contractor, Killeen Underground Firelines Utilities Contractor, Killeen Excavation Utilities Contractor, Killeen Trenching Utilities Contractor, Killeen Site Work Utilities Contractor, Killeen Road Boaring Utilities Contractor
-        Belton Underground Utilities Contractor, Belton Water & Sewer Utilities Contractor, Belton Underground Firelines Utilities Contractor, Belton Excavation Utilities Contractor, Belton Trenching Utilities Contractor, Belton Site Work Utilities Contractor, Belton Road Boaring Utilities Contractor
-        Ft. Worth Underground Utilities Contractor, Ft. Worth Water & Sewer Utilities Contractor, Ft. Worth Underground Firelines Utilities Contractor, Ft. Worth Excavation Utilities Contractor, Ft. Worth Trenching Utilities Contractor, Ft. Worth Site Work Utilities Contractor, Ft. Worth Road Boaring Utilities Contractor
-        Dallas Underground Utilities Contractor, Dallas Water & Sewer Utilities Contractor, Dallas Underground Firelines Utilities Contractor, Dallas Excavation Utilities Contractor, Dallas Trenching Utilities Contractor, Dallas Site Work Utilities Contractor, Dallas Road Boaring Utilities Contractor
-        Hewitt Underground Utilities Contractor, Hewitt Water & Sewer Utilities Contractor, Hewitt Underground Firelines Utilities Contractor, Hewitt Excavation Utilities Contractor, Hewitt Trenching Utilities Contractor, Hewitt Site Work Utilities Contractor, Hewitt Road Boaring Utilities Contractor, 
-        China Spring Underground Utilities Contractor, China Spring Water & Sewer Utilities Contractor, China Spring Underground Firelines Utilities Contractor, China Spring Excavation Utilities Contractor, China Spring Trenching Utilities Contractor, China Spring Site Work Utilities Contractor, China Spring Road Boaring Utilities Contractor" />
         <link rel="apple-touch-icon" href="/logoIconApple.png" />
       </Head>
       <Header />
@@ -137,22 +130,24 @@ export default function Main() {
               <div>
                 <h1>Family Owned And Growing!</h1>
                 <hr />
-                <p>We're currently a small, family operated utility and construction company, based in China Spring, TX, and founded in 2002.
-                  Cen-Tex Utilities is centrally located in Texas, performing jobs in major cities like Waco, Killeen, Temple, Belton, Austin, Dallas, and Ft. Worth!
+                <p>We are a small family operated Utility Construction Company, specializing in underground solutions, based in China Spring, TX, and founded in 2002.
+                  Cen-Tex Utilities is centrally located in Texas, servicing major cities like <b>Waco</b>, <b>Killeen</b>, <b>Temple</b>, <b>Belton</b>, <b>Austin</b>, <b>Dallas</b>, and <b>Ft. Worth</b>!
                 </p>
-                <p>Owner, Billy Harrison, has 35 years of hard-earned experience in all phases of water, sanitary sewer, and storm sewer construction,
-                  as well as installed hundreds of miles of water, sewer, and storm sewer lines all over the State of Texas, serving private rural Water Corporations to public municipalities and private commercial construction.
-                  His experience and knowledge is built on three generations of Harrison's in the heavy equipment, mining, and construction industries.
+                <p>Owner, Billy Harrison, has 35 years of hard-earned experience in all phases of water, sanitary sewer, storm sewer construction, as well as installed hundreds of water, sewer, and storm sewer lines all over the State of Texas, serving private rural Water Corperations and private commercial construction. His experience and knowledge is built on three generations of Harrison's in the heavy equipment, mining, and construction industries.
                 </p>
+                <span>
+                  <b>Cen-Tex Utilities</b><br />
+                  "The Underground Specialist"
+                </span>
               </div>
             </div>
 
             <div id={styles.pictureDivider}>
-              <div><Image src="/Projects/City of McGregor/1.JPG" layout='fill' objectFit='cover' alt="City of McGregor Construction and Utility Site" /></div>
-              <div><Image src="/Projects/City of Poteet/1.JPG" layout='fill' objectFit='cover' alt="City of Poteet Construction and Utility Site" /></div>
-              <div><Image src="/Projects/Copperas Cove ACC/3.JPG" layout='fill' objectFit='cover' alt="Copperas Cove ACC Construction and Utility Site" /></div>
-              <div><Image src="/Projects/CSL Plasma Austin/1.PNG" layout='fill' objectFit='cover' alt="CSL Plasma Austin Construction and Utility Site" /></div>
-              <div><Image src="/Projects/CSL Plasma Round Rock/1.JPG" layout='fill' objectFit='cover' alt="CSL Plasma Round Rock Construction and Utility Site" /></div>
+              <div onClick={e => {e.preventDefault(); router.push('/Services')}}><span><Image src="/Projects/City of McGregor/1.JPG" layout='fill' objectFit='cover' alt="City of McGregor Construction and Utility Site" /></span><motion.h1 whileHover={{backgroundColor: 'rgba(153, 79, 0, 0.5)'}}><div style={{padding: '6px 12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', borderRadius: '5px'}}>Excavation</div></motion.h1></div>
+              <div onClick={e => {e.preventDefault(); router.push('/Services')}}><span><Image src="/Projects/City of Poteet/1.JPG" layout='fill' objectFit='cover' alt="City of Poteet Construction and Utility Site" /></span><motion.h1 whileHover={{backgroundColor: 'rgba(153, 79, 0, 0.5)'}}><div style={{padding: '6px 12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', borderRadius: '5px'}}>Road Boaring</div></motion.h1></div>
+              <div onClick={e => {e.preventDefault(); router.push('/Services')}}><span><Image src="/Projects/Copperas Cove ACC/3.JPG" layout='fill' objectFit='cover' alt="Copperas Cove ACC Construction and Utility Site" /></span><motion.h1 whileHover={{backgroundColor: 'rgba(153, 79, 0, 0.5)'}}><div style={{padding: '6px 12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', borderRadius: '5px'}}>Trenching</div></motion.h1></div>
+              <div onClick={e => {e.preventDefault(); router.push('/Services')}}><span><Image src="/Projects/CSL Plasma Austin/1.PNG" layout='fill' objectFit='cover' alt="CSL Plasma Austin Construction and Utility Site" /></span><motion.h1 whileHover={{backgroundColor: 'rgba(153, 79, 0, 0.5)'}}><div style={{padding: '6px 12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', borderRadius: '5px'}}>Asphalt</div></motion.h1></div>
+              <div onClick={e => {e.preventDefault(); router.push('/Services')}}><span><Image src="/Projects/CSL Plasma Round Rock/1.JPG" layout='fill' objectFit='cover' alt="CSL Plasma Round Rock Construction and Utility Site" /></span><motion.h1 whileHover={{backgroundColor: 'rgba(153, 79, 0, 0.5)'}}><div style={{padding: '6px 12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', borderRadius: '5px'}}>Demolition</div></motion.h1></div>
             </div>
 
             <div id={styles.businessHours}>
