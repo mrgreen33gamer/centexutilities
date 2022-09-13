@@ -92,7 +92,7 @@ export default function Main() {
   return (
     <section>
       <Head>
-        <title>Cen-Tex Utilities - Utility & Construction Company // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
+        <title>Cen-Tex Utilities - Utility Construction Company // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
