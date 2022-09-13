@@ -98,7 +98,7 @@ export default function Main() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="description" content="Cen-Tex Utilities is a utility construction based in Waco, TX. Cen-Tex Utilities is known for providing site work, excavation,
+        <meta name="description" content="Cen-Tex Utilities is a utility construction company based in Waco, TX. Cen-Tex Utilities is known for providing site work, excavation,
         infrastructure/subdivisions, underground utilities (water, sewer, and storm drains), water/sewer line repair, underground firelines, utility locating, road boring, custom trenching, 
         concrete, asphalt, demolition, landscaping, erosion control, soil stabilization, TCEQ spec retention ponds, trench safety and shoring, and certified confined spaces." />
         <meta name="author" content="Scott Applications" />
