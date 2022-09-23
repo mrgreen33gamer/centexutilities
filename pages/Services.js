@@ -61,16 +61,7 @@ export default function Services() {
             </ul>
           </div>
           <div>
-            <Carousel emulateTouch={true} width="100%" stopOnHover={true} dynamicHeight={false} autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} showArrows={true} showThumbs={false} showIndicators={false}  >
-              {LocServicingSLD.map((slide, index) => {
-                return (
-                  <div key={index} >
-                    <img src={slide.image} alt="" draggable={false} />
-                    <p className="legend">{slide.title}</p>
-                  </div>
-                );
-              })}
-            </Carousel>
+
           </div>
         </div>
 
