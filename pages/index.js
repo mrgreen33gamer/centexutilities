@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -17,78 +19,82 @@ import { FamilySlideData } from '../public/Home/SlideData/FamilySlideData'
 
 import { useRouter } from 'next/router'
 
-
-function WelcomeContainer() {
-  const settings = {
-    visible: { opacity: 1, y: 0, transition: { delay: 0.7, type: 'spring', stiffness: 30, damping: 10 } },
-    hidden: { opacity: 0, y: -200}
-  };
-  const settingsText = {
-    visible: { opacity: 1, transition: { delay: 2, type: 'spring', stiffness: 15, damping: 5 } },
-    hidden: { opacity: 0}
-  };
-  return (
-    <motion.div animate="visible" initial="hidden" variants={settings}>
-      <motion.section animate="visible" initial="hidden" variants={settingsText}>
-        <h1>Cen-Tex Utilities</h1>
-        <h2>Building Texas</h2>
-      </motion.section>
-    </motion.div>
-  );
-}
-
-function BusinessHoursContainer({mon, tue, wed, thur, fri, sat, sun}) {
-  var currentWeekday = new Date().toLocaleDateString('en-us', {weekday: 'long'});
-
-  return (
-    <div>
-      {currentWeekday === 'Monday' ? 
-      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Monday</h4> <h4>{mon}</h4> </div>
-        :
-      <div> <h4>Monday</h4> <h4>{mon}</h4> </div>
-      }
-
-      {currentWeekday === 'Tuesday' ? 
-      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Tuesday</h4> <h4>{tue}</h4> </div>
-        :
-      <div> <h4>Tuesday</h4> <h4>{tue}</h4> </div>
-      }
-
-      {currentWeekday === 'Wednesday' ? 
-      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Wednesday</h4> <h4>{wed}</h4> </div>
-        :
-      <div> <h4>Wednesday</h4> <h4>{wed}</h4> </div>
-      }
-      
-      {currentWeekday === 'Thursday' ? 
-      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Thursday</h4> <h4>{thur}</h4> </div>
-        :
-      <div> <h4>Thursday</h4> <h4>{thur}</h4> </div>
-      }
-
-      {currentWeekday === 'Friday' ? 
-      <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Friday</h4> <h4>{fri}</h4> </div>
-        :
-      <div> <h4>Friday</h4> <h4>{fri}</h4> </div>
-      }
-
-      {currentWeekday === 'Saturday' ? 
-      <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Saturday</h4> <h4>{sat}</h4> </div>
-        :
-      <div> <h4>Saturday</h4> <h4>{sat}</h4> </div>
-      }
-
-      {currentWeekday === 'Sunday' ? 
-      <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Sunday</h4> <h4>{sun}</h4> </div>
-        :
-      <div> <h4>Sunday</h4> <h4>{sun}</h4> </div>
-      }
-    </div>
-  );
-}
-
 export default function Main() {
   const router = useRouter();
+
+  const [currentWeekday, setCurrentWeekday] = useState(new Date().toLocaleDateString('en-us', {weekday: 'long'}));
+
+  useEffect(() => {
+    setCurrentWeekday(new Date().toLocaleDateString('en-us', {weekday: 'long'}));
+  }, [])
+
+  function WelcomeContainer() {
+    const settings = {
+      visible: { opacity: 1, y: 0, transition: { delay: 0.7, type: 'spring', stiffness: 30, damping: 10 } },
+      hidden: { opacity: 0, y: -200}
+    };
+    const settingsText = {
+      visible: { opacity: 1, transition: { delay: 2, type: 'spring', stiffness: 15, damping: 5 } },
+      hidden: { opacity: 0}
+    };
+    return (
+      <motion.div animate="visible" initial="hidden" variants={settings}>
+        <motion.section animate="visible" initial="hidden" variants={settingsText}>
+          <h1>Cen-Tex Utilities</h1>
+          <h2>Building Texas</h2>
+        </motion.section>
+      </motion.div>
+    );
+  }
+  
+  function BusinessHoursContainer({mon, tue, wed, thur, fri, sat, sun}) {
+    return (
+      <div>
+        {currentWeekday === 'Monday' ? 
+        <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Monday</h4> <h4>{mon}</h4> </div>
+          :
+        <div> <h4>Monday</h4> <h4>{mon}</h4> </div>
+        }
+  
+        {currentWeekday === 'Tuesday' ? 
+        <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Tuesday</h4> <h4>{tue}</h4> </div>
+          :
+        <div> <h4>Tuesday</h4> <h4>{tue}</h4> </div>
+        }
+  
+        {currentWeekday === 'Wednesday' ? 
+        <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Wednesday</h4> <h4>{wed}</h4> </div>
+          :
+        <div> <h4>Wednesday</h4> <h4>{wed}</h4> </div>
+        }
+        
+        {currentWeekday === 'Thursday' ? 
+        <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Thursday</h4> <h4>{thur}</h4> </div>
+          :
+        <div> <h4>Thursday</h4> <h4>{thur}</h4> </div>
+        }
+  
+        {currentWeekday === 'Friday' ? 
+        <div style={{color: '#3662c9'}}> <h4 style={{textDecoration: 'underline'}}>Friday</h4> <h4>{fri}</h4> </div>
+          :
+        <div> <h4>Friday</h4> <h4>{fri}</h4> </div>
+        }
+  
+        {currentWeekday === 'Saturday' ? 
+        <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Saturday</h4> <h4>{sat}</h4> </div>
+          :
+        <div> <h4>Saturday</h4> <h4>{sat}</h4> </div>
+        }
+  
+        {currentWeekday === 'Sunday' ? 
+        <div style={{color: '#ce0300'}}> <h4 style={{textDecoration: 'underline'}}>Sunday</h4> <h4>{sun}</h4> </div>
+          :
+        <div> <h4>Sunday</h4> <h4>{sun}</h4> </div>
+        }
+      </div>
+    );
+  }
+
   return (
     <section>
       <Head>
