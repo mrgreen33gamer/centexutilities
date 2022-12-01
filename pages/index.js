@@ -40,7 +40,7 @@ export default function Main() {
     return (
       <motion.div animate="visible" initial="hidden" variants={settings}>
         <motion.section animate="visible" initial="hidden" variants={settingsText}>
-          <h1>Cen-Tex Utilities</h1>
+          <h1>Cen-Tex Utilities<span style={{fontWeight: '200', fontFamily: 'Rubik'}}>&trade;</span></h1>
           <h2>Building Texas</h2>
         </motion.section>
       </motion.div>
@@ -98,7 +98,7 @@ export default function Main() {
   return (
     <section>
       <Head>
-        <title>Cen-Tex Utilities - Utility Construction Company // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
+        <title>Cen-Tex Utilities &trade; - Utility Construction Company // Waco, Killeen, Temple, Belton, Austin, Dallas, Ft. Worth</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="/logoIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -142,7 +142,7 @@ export default function Main() {
                 <p>Owner, Billy Harrison, has 35 years of hard-earned experience in all phases of water, sanitary sewer, storm sewer construction, as well as installed hundreds of water, sewer, and storm sewer lines all over the State of Texas, serving private rural Water Corperations and private commercial construction. His experience and knowledge is built on three generations of Harrison's in the heavy equipment, mining, and construction industries.
                 </p>
                 <span>
-                  <b>Cen-Tex Utilities</b><br />
+                  <b>Cen-Tex Utilities<span style={{fontWeight: '200', fontFamily: 'Rubik'}}>&trade;</span></b><br />
                   "The Underground Specialist"
                 </span>
               </div>
