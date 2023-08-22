@@ -42,10 +42,14 @@ export default function Services() {
           </div>
           <div>
             <ul>
+              <li>Complete TurnKey</li>
               <li>Site Work</li>
+              <li>Site Prep / Dirt Work</li>
+              <li>Concrete</li>
+              <li>Landscaping, Erosion control/soil stabilization</li>
+              <li>Underground Utilities (Water, Sewer and Storm Drain)</li>
               <li>Excavation</li>
               <li>Infrastructure/Subdivisions</li>
-              <li>Underground Utilities (Water, Sewer and Storm Drain)</li>
               <li><b>24hr/7day</b> EMERGENCY Water/Sewer line repair</li>
               <li>Underground Fireline (We are licensed SCR REM-U)</li>
               <li>Utility Locating</li>
@@ -54,7 +58,7 @@ export default function Services() {
               <li>Concrete (Engineered foundation, Concrete parking/curbs, Sidewalks)</li>
               <li>Asphalt</li>
               <li>Demolition</li>
-              <li>Landscaping, Erosion control/soil stabilization</li>
+              
               <li>TCEQ Spec Retention Ponds</li>
               <li><b>OSHA</b> Certified Trench Safety and Shoring</li>
               <li><b>OSHA</b> Certified Confined Spaces</li>
