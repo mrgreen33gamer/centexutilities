@@ -1,5 +1,8 @@
 export const FamilySlideData = [
     {
+      image: ('./Home/SlideData/newCover.jpg')
+    },
+    {
       image: ('./Home/SlideData/cover.jpg')
     },
     {

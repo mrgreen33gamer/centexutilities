@@ -81,7 +81,7 @@ export default function Header() {
         </div>
         <div ref={hamburgerMenuSection}>
           {
-            menuState === false ? <FontAwesomeIcon onClick={() => {setMenuState(!menuState)}} style={{width: '25px', height: '25px', cursor: 'pointer'}} icon={faBars} color="black" /> : <FontAwesomeIcon onClick={() => {setMenuState(!menuState)}} style={{width: '25px', height: '25px', cursor: 'pointer'}} icon={faBarsStaggered} size="2x" color="black" />
+            menuState === false ? <FontAwesomeIcon onClick={() => {setMenuState(!menuState)}} style={{width: '30px', height: '30px', cursor: 'pointer'}} icon={faBars} color="black" /> : <FontAwesomeIcon onClick={() => {setMenuState(!menuState)}} style={{width: '30px', height: '30px', cursor: 'pointer'}} icon={faBarsStaggered} size="2x" color="black" />
           }
             <motion.div ref={mobileNavigation} variants={menuAnimation} initial='hidden' animate={menuState === true ? 'visible' : 'back'}>
               <nav>

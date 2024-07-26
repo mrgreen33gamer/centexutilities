@@ -15,8 +15,8 @@ export default function Footer() {
       <div>
         <div>
           <div><FontAwesomeIcon className={styles.icon} icon={faLocationDot} size="2x" color="whitesmoke"/><div><h1>China Spring, TX</h1></div></div>
-          <div><FontAwesomeIcon className={styles.icon} icon={faPhone} size="2x" color="whitesmoke"/><h1 style={{textDecoration: 'none'}}>(254)-855-7613</h1></div>
-          <div><FontAwesomeIcon className={styles.icon} icon={faEnvelope} size="2x" color="whitesmoke"/><h1>centexutilities@yahoo.com</h1></div>
+          <div style={{cursor: 'pointer'}} onClick={() => window.location.href = 'tel:254-855-7613'}><FontAwesomeIcon className={styles.icon} icon={faPhone} size="2x" color="whitesmoke"/><h1 style={{textDecoration: 'none'}}>(254)-855-7613</h1></div>
+          <div style={{cursor: 'pointer'}} onClick={() => window.location.href = 'mailto:centexutilities@yahoo.com'}><FontAwesomeIcon className={styles.icon} icon={faEnvelope} size="2x" color="whitesmoke"/><h1>centexutilities@yahoo.com</h1></div>
         </div>
       </div>
       <div>
